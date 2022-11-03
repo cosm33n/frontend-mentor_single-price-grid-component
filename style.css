@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Roboto&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Karla;
+}
+
+body {
+  background-color: var(--light-gray);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 600px;
+  border-radius: 10px;
+}
+
+.top-div {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.top-div > * {
+  margin: 10px 0;
+}
+.p1,
+.p2 {
+  font-weight: bold;
+}
+.p1 {
+  color: var(--cyan);
+}
+
+.p2 {
+  color: var(--bright-yellow);
+}
+.p3 {
+  color: var(--grayish-blue);
+}
+
+.left-bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: var(--cyan);
+  color: white;
+  border-bottom-left-radius: 10px;
+}
+.left-bottom > * {
+  margin: 10px 0;
+}
+
+.span {
+  font-size: 25px;
+}
+
+.btn {
+  padding: 15px 10px;
+  cursor: pointer;
+  background-color: var(--bright-yellow);
+  font-weight: bold;
+  color: inherit;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.btn:hover {
+  background-color: hsl(179, 62%, 46%);
+  color: var(--bright-yellow);
+}
+.btn:active {
+  transform: scale(0.9);
+}
+
+.right-bottom {
+  background-color: hsl(179, 62%, 46%);
+  color: white;
+  border-bottom-right-radius: 10px;
+}
+.right-bottom > .p1-r {
+  margin-top: 10px;
+  padding: 30px 30px;
+}
+
+.right-bottom > .p2-r {
+  font-size: 14px;
+  color: var(--light-gray);
+  padding-left: 30px;
+  margin-bottom: -10px;
+}
+
+@media (max-width: 520px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 40px;
+  }
+  .top-div {
+    grid-column: span 1;
+  }
+
+  .left-bottom {
+    border-bottom-left-radius: 0;
+  }
+  .right-bottom {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
