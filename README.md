@@ -11,8 +11,8 @@ Users are able to:
 
 ### Screenshot
 
-![Desktop Version](./screenshot-desktop.jpg)
-![Mobile Version](./screenshot-mobile.jpg)
+![Desktop Version](./screenshot-desktop.png)
+![Mobile Version](./screenshot-mobile.png)
 
 ### Links
 
