@@ -16,7 +16,7 @@ Users are able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://cosm33n.github.io/frontend-mentor_single-price-grid-component/)
+[Live Site URL](https://cosm33n.github.io/frontend-mentor_single-price-grid-component/)
 
 ### Built with
 
